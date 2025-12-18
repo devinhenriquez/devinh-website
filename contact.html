@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- NAV-->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Growingessential.html">Growing Essentials</a>
+    <a href="Gardenevents.html">Garden Events</a>
+    <a href="contact.html" class="signup">SIGN UP</a>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-title">
+    <h1>Contact the Garden Team</h1>
+    <p>If you want to join a garden plot, volunteer, or have a gardening question, send us a message below!</p>
+  </header>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-form-section">
+    <form action="form-handler.php" method="post" class="contact-form">
+
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <!-- Message -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+      <!-- Radio Buttons -->
+      <p>Reason for Contact:</p>
+      <label><input type="radio" name="favorite" value="join_plot" required> I want to join a garden plot</label>
+      <label><input type="radio" name="favorite" value="volunteer"> I’m interested in volunteering</label>
+      <label><input type="radio" name="favorite" value="question"> I have a gardening question</label>
+
+      <!-- Checkboxes -->
+      <p>Topics I’m Interested In:</p>
+      <label><input type="checkbox" name="browsers[]" value="composting"> Composting</label>
+      <label><input type="checkbox" name="browsers[]" value="native_plants"> Native Plants</label>
+      <label><input type="checkbox" name="browsers[]" value="vegetable_growing"> Vegetable Growing</label>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit">
+
+    </form>
+  </section>
+
+</body>
+</html>
+
+
